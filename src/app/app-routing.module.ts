@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
         exposedModule: './Routes',
       }).then((m) => m.TransactionsRoutingModule),
   },
+  { path: 'error', component: ErrorComponent },
 ];
 
 @NgModule({
