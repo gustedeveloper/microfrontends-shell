@@ -14,5 +14,6 @@ module.exports = withModuleFederationPlugin({
       strictVersion: true,
       requiredVersion: "auto",
     }),
+    "shared-lib": { singleton: true, requiredVersion: "0.0.1" },
   },
 });
