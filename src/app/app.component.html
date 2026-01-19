@@ -3,12 +3,6 @@
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/transactions/list">Cargar transacciones</a></li>
   </ul>
-  <div class="balance">
-    <span>Balance Total:</span>
-    <strong [class.positive]="total >= 0" [class.negative]="total < 0">
-      {{ total | currency : "EUR" }}
-    </strong>
-  </div>
 </header>
 
 <router-outlet></router-outlet>

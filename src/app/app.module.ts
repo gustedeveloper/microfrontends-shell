@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
 
 registerLocaleData(localeEs, 'es');
 
@@ -22,6 +25,9 @@ registerLocaleData(localeEs, 'es');
     MatIconModule,
     MatSnackBarModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    MatTooltipModule,
+    MatSelectModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent],
