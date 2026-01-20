@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
 
 registerLocaleData(localeEs, 'es');
 
@@ -28,6 +29,7 @@ registerLocaleData(localeEs, 'es');
     HttpClientModule,
     MatTooltipModule,
     MatSelectModule,
+    MatDialogModule,
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent],
